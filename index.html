@@ -1,25 +1,51 @@
 <html>
-  <head>
-    <title>Seminario TECEMER IPI|IFPE2021.1</title>
+  
+     <!--  <title>Seminario TECEMER IPI|IFPE2021.1</title>
      <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+-->
+  
+  ----
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
-  </head>
+
+
   
   <body style="margin: 0px: overflow: hidden">
+    
+    
+    
     
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false;">
       
     
 
     <a-maker present="hiro">
-      <a-box clolor="red"></a-box>
+      
+        <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        ></a-entity>
+      
+      
     </a-maker>
+      
+      
+      
+      
+      
+      
 
 <a-entity camera></a-entity>
 
 </a-scene>
 
+    
+    
+    
    
   </body>
 </html>
