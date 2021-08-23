@@ -33,7 +33,7 @@
       </a-marker>
 
       <!-- handle matrix marker -->
-      <a-marker type="barcode" value="0">
+      <a-marker type="barcode" value="2222222">
         <a-box
           position="0 0.5 0"
           material="opacity: 0.5; side: double;color:pink;"
@@ -47,11 +47,11 @@
         </a-box>
       </a-marker>
 
-      <a-marker type="barcode" value="3">
+      <a-marker type="barcode" value="22222222">
         <a-box color="pink"></a-box>
       </a-marker>
 
-      <!-- Modelo 3D -->
+      <!-- Modelo 3D TESTE
 
       <a-assets>
         <a-ssets-item
@@ -60,7 +60,7 @@
         ></a-ssets-item>
       </a-assets>
 
-      <a-marker type="barcode" value="5">
+      <a-marker type="barcode" value="12">
         <a-entity
           id="modelo3D"
           position="1 1 1"
@@ -70,6 +70,67 @@
           >
         </a-entity>
       </a-marker>
+      -->
+       <!-- Modelo 3D 0  3  5  -->
+      
+       <a-assets>
+        <a-ssets-item
+          id="modelo1"
+          src="https://cdn.glitch.com/a332d70c-2886-4c62-ab99-1d2d950179c4%2FAvatar01.glb?v=1629733079095"
+        ></a-ssets-item>
+         
+           <a-ssets-item
+          id="modelo2"
+          src="https://cdn.glitch.com/a332d70c-2886-4c62-ab99-1d2d950179c4%2FAvatar02.glb?v=1629733084366"
+        ></a-ssets-item>
+         
+          <a-ssets-item
+          id="modelo3"
+          src="https://cdn.glitch.com/a332d70c-2886-4c62-ab99-1d2d950179c4%2FAvatar03.glb?v=1629733091137"
+        ></a-ssets-item>
+         
+      </a-assets>
+
+      <a-marker type="barcode" value="0">
+        <a-entity
+          id="modelo3D1"
+          position="1 1 1"
+          rotation="0 0 0"
+          scale="5 5 5"
+          gltf-model="#modelo1"
+          >
+        </a-entity>
+      </a-marker>
+      
+      
+      <a-marker type="barcode" value="3">
+        <a-entity
+          id="modelo3D2"
+          position="0 -2 0"
+          rotation="-80 0 0"
+          scale="5 5 5"
+          gltf-model="#modelo2"
+          >
+        </a-entity>
+      </a-marker>
+      
+            <a-marker type="barcode" value="5">
+        <a-entity
+          id="modelo3D3"
+          position="0 -2 0"
+          rotation="-80 0 0"
+          scale="5 5 5"
+          gltf-model="#modelo3"
+          >
+        </a-entity>
+      </a-marker>
+      
+      
+      
+      
+      
+      
+      
 
       <!-- handle kanji marker -->
       <a-marker preset="kanji">
