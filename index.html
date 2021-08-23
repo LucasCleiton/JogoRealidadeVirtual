@@ -146,6 +146,31 @@ if(this.el.object3D.visible == true){
   }
 });
 </script>
+
+
+<script>
+AFRAME.registerComponent('controlador2', {
+  // ...
+  init: function () {
+    // Set up initial state and variables.
+    this.toggle = false;
+    this.vid = document.querySelector("#finalgood")
+    this.vid.pause();
+  },
+  tick:function(){
+
+if(this.el.object3D.visible == true){
+  if(!this.toggle){
+     this.toggle = true;
+     this.vid.play();
+    }
+  }else{
+  this.toggle = false;
+    this.vid.pause();
+    }
+  }
+});
+</script>
       
       <!-- Modelo video  FinalOVER   Final 15  -->
  
@@ -169,7 +194,7 @@ if(this.el.object3D.visible == true){
         <video id="finalgood" src="https://cdn.glitch.com/a332d70c-2886-4c62-ab99-1d2d950179c4%2FFinal2.mp4?v=1629757711621"></video>
       </a-assets>
       
-      <a-marker type="barcode" value="17" controlador>
+      <a-marker type="barcode" value="17"  controlador2 >
         
           <a-video width="1.5"
                    height="1"
