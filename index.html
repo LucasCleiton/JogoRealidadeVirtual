@@ -122,13 +122,14 @@
 
 
 
+
 <script>
 AFRAME.registerComponent('controlador', {
   // ...
   init: function () {
     // Set up initial state and variables.
     this.toggle = false;
-    this.vid = document.querySelector("#apresentacao")
+    this.vid = document.querySelector("#finalbad")
     this.vid.pause();
   },
   tick:function(){
@@ -153,11 +154,11 @@ if(this.el.object3D.visible == true){
         <video id="finalbad" src="https://cdn.glitch.com/a332d70c-2886-4c62-ab99-1d2d950179c4%2FFim%20de%20jogo.mp4?v=1629757728832"></video>
       </a-assets>
       
-      <a-marker type="barcode" value="15">
+      <a-marker type="barcode" value="15" controlador>
         
           <a-video width="1.5"
                    height="1"
-                   rotation="0 0 0"
+                   rotation="-90 0 0"
                    position="0 0 0"
                    src="#finalbad"></a-video>
         
@@ -168,11 +169,11 @@ if(this.el.object3D.visible == true){
         <video id="finalgood" src="https://cdn.glitch.com/a332d70c-2886-4c62-ab99-1d2d950179c4%2FFinal2.mp4?v=1629757711621"></video>
       </a-assets>
       
-      <a-marker type="barcode" value="17">
+      <a-marker type="barcode" value="17" controlador>
         
           <a-video width="1.5"
                    height="1"
-                   rotation="0 0 0"
+                   rotation="-90 0 0"
                    position="0 0 0"
                    src="#finalgood"></a-video>
         
