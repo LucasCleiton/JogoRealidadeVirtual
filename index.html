@@ -36,7 +36,25 @@
      	<a-marker type='barcode' value='3'>
 			<a-box color="pink"></a-box>
 		</a-marker>
+     
+     
+     
+     
+     		<!-- Modelo 3D -->
 
+     <a-assets>
+            <a-ssets-item id="modelo1" src="https://cdn.glitch.com/a332d70c-2886-4c62-ab99-1d2d950179c4%2Ftree.gltf?v=1629724862313"></a-ssets-item>
+          </a-assets>
+     
+       	<a-marker type='barcode' value='5'>
+			    <a-entity id="modelo3D"
+                      position ="0  0"
+                      scale="0.20 0.20 0.20"
+                      gltf-model="#modelo1">
+          </a-entity>
+		</a-marker>
+
+     
 		<!-- handle kanji marker -->
 		<a-marker preset='kanji'>
 			<a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:green;'>
